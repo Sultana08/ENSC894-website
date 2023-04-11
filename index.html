@@ -20,7 +20,126 @@
         <p> MANET stands for Mobile Ad-Hoc Network, which forms a temporary network without the assistance of centralized administration. It consists of a group of wireless portable hosts. The ability of joining or leaving any network anytime is the key feature of MANET. The performance quality of MANET can be measured based on various parameters including packet delivery ratio, routing overhead, average end-to-end delay, jitter and packet loss and so on. Network circumstances also can impact the performance. There are different routing protocols for MANET. Ad hoc On-Demand Distance Vector Routing, Destination-Sequenced Distance Vector Routing, Dynamic Source Routing, and Optimized Link State Routing.  <br> In this project, we aim to compare different routing protocols of MANET and the performances (AODV, DSDV, OLSR and DSR). Our main objective is to figure out which routing protocol has the best overall performance.<br>  
         <br>
         </p>
+
+        <h2>MANET (Mobile Ad Hoc Netwrok)</h2>
+        <hr>
+        <p> MANET is a collection of mobile nodes that forms a temporary network. Nodes work as both routers and hosts for forwarding packets. There is no need of centralized administration.<br>  
+        <br>
+        </p>
+
+        <h2>MANET Protocols</h2>
+        <hr>
+        <p> Following 4 protocols have been used for our project. <br>  
+        <br>
+        </p>
+
+        <h2>Ad hoc On-Demand Distance Vector Routing (AODV)</h2>
+        <hr>
+        <p> The routes between nodes are established in 2 steps: route discovery and route maintenance. 
+            ‘RREQ’, ‘RREP’, ‘RRER’ messages are exchanged here. 
+            <br>  
+        <br>
+        </p>
+
+        <h2>Dynamic Source Routing (DSR)</h2>
+        <hr>
+        <p> Here, transmitted packets have the complete address. 
+            This is also carried out in 2 steps like AODV.
+            Here source node first looks for the route in the cache before exchanging messages.
+            <br>  
+        <br>
+        </p>
+
+        <h2>Optimized Link State Routing (OLSR)</h2>
+        <hr>
+        <p> It is an optimization of link state routing algorithm.
+            It reduces number of retransmission for broadcasting with the uses of Multi Point Relays (MPRs).
+            OLSR utilizes HELLO and Topology Control (TC) messages.
+            
+            <br>  
+        <br>
+        </p>
+
+        <h2>Destination-Sequenced Distance Vector Routing (DSDV)</h2>
+        <hr>
+        <p>It is a table driven routing protocol, which works on the Bellman Ford routing algorithm.
+             <br>  
+        <br>
+        </p>
         
+        <h2>Simulation</h2>
+        
+        <hr>
+        <h3>Environment</h3>
+        <p><br> Four routing protocols were simulated using NS3
+            <br> NS3 version: 3.31<br>
+            Operating system: Ubuntu 22.04  <br>  
+        <h3>Metrics</h3>
+        <p><br> Receiving rate<br>
+            Number of flows Packet loss<br>
+            Flow Bit Rates (bit/second)<br>
+            Delay in seconds<br> <br>
+
+            <img src="1.png" alt=""> <br>
+           
+            
+        
+        <br>
+        </p>
+        <h2>Results</h2>
+        <hr>
+        <p>
+             <br>  
+             
+             <img src="2.png" alt=""> <br>
+             <img src="3.png" alt=""> <br>
+             <img src="4.png" alt=""> <br>
+             <img src="5.png" alt=""> <br>
+             <img src="6.png" alt=""> <br>
+        <br>
+        </p>
+
+
+        <h2>Non Trivial task</h2>
+        <hr>
+        <p>Under some circumstances, the protocols took significant amount of time to generate any packet. <br>
+            In our case, DSDV took longer time to build as well as stimulate any packets. <br>
+            
+             <br>  
+        <br>
+        </p>
+
+        <h2>Difficulties</h2>
+        <hr>
+        <p>We could not generate any trace of flows in DSR. <br>
+            Routing message overhead was low and more nodes would have increased the number of flows. <br>
+            
+             <br>  
+        <br>
+        </p>
+
+        <h2>Alternative approaches</h2>
+        <hr>
+        <p>We compared the protocols using UDP, however Ping and TCP traffic can also be used. <br>
+            OPNET can be used instead of NS-3 simulator. <br>
+            
+            
+             <br>  
+        <br>
+        </p>
+
+        <h2>Future Work</h2>
+        <hr>
+        <p>We could have used varieties of nodes (between 10 nodes and 200 nodes) to see how the different performance matric changes with the small and extremely high number of nodes. <br>
+            Flow monitor does not capture any flows using DSR, but we can use other performance matrices to come to a solution. <br>
+            
+            
+            
+             <br>  
+        <br>
+        </p>
+
+
         <h2>Project references </h2>
         <hr>
         <p> 1.	G. Kaur and P. Thakur, "Routing Protocols in MANET: An Overview," 2019 2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies (ICICICT), Kannur, India, 2019, pp. 935-941, doi: 10.1109/ICICICT46008.2019.8993294. 
